@@ -1,0 +1,42 @@
+{
+    "env": {
+      "browser": true,
+      "es2020": true,
+      "commonjs": true,
+      "node": true
+    },
+    "globals": {
+      "require": true,
+      "module": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended",
+      "plugin:jest/recommended"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "plugins": ["babel", "react"],
+    "ignorePatterns": ["data.js"],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+  
